@@ -20,5 +20,11 @@ namespace ToDoList
             BindingContext = this;
 			InitializeComponent ();
 		}
-	}
+
+        private void OnSelected(object sender, ItemTappedEventArgs e)
+        {
+            var ToDoItems = e.Item as ToDoItem;
+            DisplayAlert("CHoosen!", ToDoItems.TaskName + "was selected!", "OK");
+        }
+    }
 }

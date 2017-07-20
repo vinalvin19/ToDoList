@@ -58,7 +58,7 @@ namespace ToDoList
 
         private void OnReview(object sender, EventArgs e)
         {
-            var tempList = toDoItems;
+            Navigation.PushAsync(new ListTaskPage(toDoItems));
         }
     }
 }
