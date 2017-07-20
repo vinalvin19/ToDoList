@@ -12,7 +12,6 @@ namespace ToDoList
 		public App ()
 		{
 			InitializeComponent();
-
             MainPage = new NavigationPage(new CreatePage());
 		}
 
